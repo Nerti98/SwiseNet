@@ -1,6 +1,6 @@
 # SwiseNet-PyTorch
 ### **This is repository is an official PyTorch implementation of the paper "SwiseNet: Lightweight Image Super-Resolution with Scale-wise Network".**
-IEEE/CVF British Machine Vision Conference (BMVC), 2023. [[Paper](https://papers.bmvc2023.org/0286.pdf)]
+British Machine Vision Conference (BMVC), 2023. [[Paper](https://papers.bmvc2023.org/0286.pdf)]
 
 
 ### Abstract 
