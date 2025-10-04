@@ -74,7 +74,7 @@ $ python train.py --patch_size 64 --batch_size 64 --max_steps 600000 --lr 0.001 
 <div align="center">
 
 
-<img width="780" height="500" src="assets/results.png">
+<img width="780" height="500" src="results.png">
 </div>
 </p>
 </details>
