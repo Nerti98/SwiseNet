@@ -44,7 +44,7 @@ $ python div2h5.py
 3. Other benchmark datasets can be downloaded in [Google Drive](https://drive.google.com/drive/folders/1t2le0-Wz7GZQ4M2mJqmRamw5o4ce2AVw?usp=sharing). Same as DIV2K, please put all the datasets in `dataset` directory.
 
 ### Testing
-We provide the pretrained models in `checkpoint` directory. To test OverNet on benchmark dataset:
+We provide the pretrained models in `checkpoint` directory. To test SwiseNet on benchmark dataset:
 ```shell
 # Scale factor x2
 $ python Sample.py      --test_data_dir dataset/<dataset> --scale 2 --upscale 3 --ckpt_path ./checkpoint/<path>.pth --sample_dir <sample_dir>
@@ -57,7 +57,7 @@ $ python Sample.py      --test_data_dir dataset/<dataset> --scale 4 --upscale 5 
 ```
 
 ### Training
-Here are our settings to train OverNet. Note: We use two GPU to utilize large batch size, but if OOM error arise, please reduce batch size.
+Here are our settings to train SwiseNet. Note: We use two GPU to utilize large batch size, but if OOM error arise, please reduce batch size.
 ```shell
 # Scale factor x2
 $ python train.py --patch_size 64 --batch_size 64 --max_steps 600000 --lr 0.001 --decay 150000 --scale 2  --upscale 3
@@ -70,13 +70,6 @@ $ python train.py --patch_size 64 --batch_size 64 --max_steps 600000 --lr 0.001 
                       
  ```
 
-### Results
-We achieved state-of-the-art performance on lightweigh image SR, denoising and deblurring. All visual results of OverNet for scale factor x2, x3, and x4 can be downloaded [here.](https://drive.google.com/drive/folders/1svSJq8UlU8Yq90tLfByhv_0ctPKv5PiN?usp=sharing)
-
-<details>
-<summary>Lightweight Single Image Super-Resolution (click me)</summary>
-<p align="center">
-
 **Note:** The PSNR and SSIM reported in the paper are outdated. We have updated the results as following:
 <div align="center">
 
@@ -87,17 +80,9 @@ We achieved state-of-the-art performance on lightweigh image SR, denoising and d
 </details>
 
 
-<details>
-<summary>Image denoising and deblurring (click me)</summary>
-<p align="center">
-Updated quantitative results will be released soon.
-<img width="780" height="500" src="assets/overnet_BDN.png">
-</p>
-</details>
-
 ## Citation
 ```
-@inproceedings{behjati2021overnet,
+@inproceedings{nerti982023swisenet,
   title={SwiseNet: Lightweight Image Super-Resolution with Scale-wise Network},
   author={Xiaoaole Zhao , Xinkun Wu},
   booktitle={British Machine Vision Conference},
